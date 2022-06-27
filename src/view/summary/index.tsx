@@ -7,7 +7,7 @@ import SummaryBox from "../../components/SummaryBox";
 const Summary = () => {
   const navigate = useNavigate();
   const { state } = useLocation() as any;
-  console.log("state", state);
+
   return (
     <Box sx={{ p: "12px" }}>
       <InputTitle>My Bookings</InputTitle>
