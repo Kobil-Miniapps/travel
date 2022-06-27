@@ -1,0 +1,23 @@
+[
+  {
+    "type": "car",
+    "name": "AVIS",
+    "price": 670,
+    "carType": "Avis - Standart SUV",
+    "imgPath": "/images/avis.png"
+  },
+  {
+    "type": "car",
+    "name": "HERTZ",
+    "price": 498,
+    "carType": "Hertz - Luxury Electric",
+    "imgPath": "/images/hertz.png"
+  },
+  {
+    "type": "car",
+    "name": "SIXT",
+    "price": 550,
+    "carType": "Sixt - Luxury",
+    "imgPath": "/images/sixt.png"
+  }
+]

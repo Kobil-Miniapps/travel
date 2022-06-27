@@ -1,0 +1,34 @@
+[
+  {
+    "type": "hotel",
+    "name": "Hilton",
+    "date": "3 days",
+    "price": 550,
+    "roomType": "King Suit",
+    "imgPath": "/images/hilton.png"
+  },
+  {
+    "type": "hotel",
+    "name": "Marriott",
+    "date": "3 days",
+    "price": 498,
+    "roomType": "King Suit",
+    "imgPath": "/images/marriott.png"
+  },
+  {
+    "type": "hotel",
+    "name": "Hilton2",
+    "date": "3 days",
+    "price": 550,
+    "roomType": "King Suit",
+    "imgPath": "/images/hilton.png"
+  },
+  {
+    "type": "hotel",
+    "name": "Marriott2",
+    "date": "3 days",
+    "price": 398,
+    "roomType": "King Suit",
+    "imgPath": "/images/marriott.png"
+  }
+]

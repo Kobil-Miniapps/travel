@@ -1,0 +1,42 @@
+stages:
+  - build
+  - push
+  - deploy
+
+build_docker_image:
+  stage: build
+  script:
+    - docker build . -t  registry.docker.dev.westerops.com/mtravel:v$CI_PIPELINE_IID
+  tags:
+    - shared
+    - shell
+  only:
+    - prep
+
+push_image_repository:
+  stage: push
+  script:
+    - docker login $DOCKER_REGISTRY -u $DOCKER_USER -p $DOCKER_PWD
+    - docker push registry.docker.dev.westerops.com/mtravel:v$CI_PIPELINE_IID
+  tags:
+    - shared
+    - shell
+  only:
+    - prep
+
+deploy:
+  stage: deploy
+  script:
+    - docker login $DOCKER_REGISTRY -u $DOCKER_USER -p $DOCKER_PWD
+    - docker-compose up -d
+    # - docker-compose up -d
+    # - docker rm  $(docker ps -aq -f label="tier=frontend") || true
+    # - docker rmi  $(docker images -aq -f label="tier=frontend") || true
+
+  tags:
+    - mtravel
+    - deploy
+    - prep
+  only:
+    - prep
+  

@@ -1,0 +1,30 @@
+[
+  {
+    "type": "flight",
+    "name": "Lufthansa",
+    "date": "Jun 15 8:00 PM || Jun 19 11:00 AM",
+    "price": 3050,
+    "imgPath": "/images/lufthansa.png"
+  },
+  {
+    "type": "flight",
+    "name": "Turkish Airlines",
+    "date": "Jun 15 8:00 PM || Jun 19 11:00 AM",
+    "price": 2800,
+    "imgPath": "/images/turkish-airlines.png"
+  },
+  {
+    "type": "flight",
+    "name": "Lufthansa2",
+    "date": "Jun 15 8:00 PM || Jun 19 11:00 AM",
+    "price": 2500,
+    "imgPath": "/images/lufthansa.png"
+  },
+  {
+    "type": "flight",
+    "name": "Turkish Airlines2",
+    "date": "Jun 15 8:00 PM || Jun 19 11:00 AM",
+    "price": 2750,
+    "imgPath": "/images/turkish-airlines.png"
+  }
+]
